@@ -6,9 +6,7 @@ import qalqon from "../../assets/icons/qalqon.svg";
 import like from "../../assets/icons/like.svg";
 import star from "../../assets/icons/star.svg";
 import { category, products1, products2 } from "../../data";
-import { CategoryCard } from "./components/category-card";
-import { ProductCard } from "../../../../homework/src/components/product-card";
-import Yangi from "../../components/hero/components/yangi";
+
 
 export const Home = () => {
   return (
