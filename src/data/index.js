@@ -10,6 +10,7 @@ const categoryList = Object.values(categories);
 
 export const products1 = [
 	{
+		id: 1,
 		image: pngList[0],
 		title: '1984',
 		janr: "SIYOSAT, FANTASTIKA",
@@ -20,6 +21,7 @@ export const products1 = [
 	},
 
 	{
+		id: 2,
 		image: pngList[1],
 		title: 'Rich dad poor dad',
 		janr: "SIYOSAT, FANTASTIKA",
@@ -30,6 +32,7 @@ export const products1 = [
 	},
 
 	{
+		id: 3,
 		image: pngList[2],
 		title: 'Код 8',
 		janr: "SIYOSAT, FANTASTIKA",
@@ -40,6 +43,7 @@ export const products1 = [
 	},
 
 	{
+		id: 4,
 		image: pngList[3],
 		title: 'Даниел КИЗ',
 		janr: "SIYOSAT, FANTASTIKA",
@@ -50,6 +54,7 @@ export const products1 = [
 	},
 
 	{
+		id: 5,
 		image: pngList[4],
 		title: 'Бепарволикнинг но...',
 		janr: "SIYOSAT, FANTASTIKA",
@@ -62,6 +67,7 @@ export const products1 = [
 
 export const products2 = [
 	{
+		id: 6,
 		image: pngList[5],
 		title: '1984',
 		janr: "SIYOSAT, FANTASTIKA",
@@ -72,6 +78,7 @@ export const products2 = [
 	},
 
 	{
+		id: 7,
 		image: pngList[6],
 		title: 'Rich dad poor dad',
 		janr: "SIYOSAT, FANTASTIKA",
@@ -82,6 +89,7 @@ export const products2 = [
 	},
 
 	{
+		id: 8,
 		image: pngList[7],
 		title: 'Код 8',
 		janr: "SIYOSAT, FANTASTIKA",
@@ -92,6 +100,7 @@ export const products2 = [
 	},
 
 	{
+		id: 9,
 		image: pngList[8],
 		title: 'Даниел КИЗ',
 		janr: "SIYOSAT, FANTASTIKA",
@@ -102,6 +111,7 @@ export const products2 = [
 	},
 
 	{
+		id: 10,
 		image: pngList[9],
 		title: 'Бепарволикнинг но...',
 		janr: "SIYOSAT, FANTASTIKA",

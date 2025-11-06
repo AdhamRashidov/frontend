@@ -1,4 +1,5 @@
-import React from "react";
+
+import { Link } from "react-router-dom";
 import { products1 } from "../../../data/index.js";
 import opa from "../../../assets/opa.png";
 import rasm from "../../../assets/screen.png";
@@ -21,16 +22,18 @@ export const Banner = () => {
 
             <div className="flex gap-3 mt-[30px]">
               {products1.slice(0, 3).map((item) => (
-                <div className="w-[190px] text-center">
-                  <img key={item.id} src={item.image} alt="img" />
-                  <h3 className="mt-4 text-gray-700">{item.title}</h3>
-                </div>
+                <Link to={`/product/${item.id}`} key={item.id}>
+                  <div className="w-[190px] text-center">
+                    <img src={item.image} alt="img" />
+                    <h3 className="mt-4 text-gray-700 font-semibold">{item.title}</h3>
+                  </div>
+                </Link>
               ))}
             </div>
-            <button className="flex justify-center items-center absolute w-8 h-8 bg-(--primary) rounded-full right-[25px]">
+            <button className="flex justify-center items-center absolute w-8 h-8 bg-blue-600 rounded-full right-[25px]">
               <img src={rigthPointer} alt="rightPointer" />
             </button>
-            <button className="flex justify-center items-center absolute w-8 h-8 bg-(--primary) rounded-full left-[285px]">
+            <button className="flex justify-center items-center absolute w-8 h-8 bg-blue-600 rounded-full left-[285px]">
               <img src={leftPointer} alt="leftPointer" />
             </button>
           </div>
@@ -47,7 +50,7 @@ export const Banner = () => {
             </p>
             <button
               className="flex bg-white justify-center items-center mx-auto
-						  py-2.5 px-5 gap-2.5 rounded-xl font-semibold"
+              py-2.5 px-5 gap-2.5 rounded-xl font-semibold"
             >
               <img src={heart} alt="heart" />
               <p>Обуна бўлиш</p>

@@ -1,6 +1,8 @@
 import React from "react";
 import Yangi from "./components/yangi";
 import Audio from "./components/audio";
+import { ProductCard } from "../../../../homework/src/components/product-card";
+import { products1 } from "../../data";
 
 export const Hero = () => {
   return (
