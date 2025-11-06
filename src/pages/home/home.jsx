@@ -6,6 +6,7 @@ import qalqon from "../../assets/icons/qalqon.svg";
 import like from "../../assets/icons/like.svg";
 import star from "../../assets/icons/star.svg";
 import { category, products1, products2 } from "../../data";
+import { CategoryCard } from "./components/category-card";
 
 
 export const Home = () => {
@@ -82,6 +83,8 @@ export const Home = () => {
       </section>
 
       <Hero />
+
+
     </>
   );
 };
