@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-		
+		<h1 className="text-center font-bold text-[60px]">SALOM ALAYKUM JAVOXIR</h1>
     </>
   )
 }
