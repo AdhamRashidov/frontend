@@ -78,6 +78,22 @@ const product = createSlice({
 				),
 			};
 		},
+
+		toggleLike: (state, action) => {
+			const isLiked = state.likeProducts.find((item) => item.id === action.payload.id);
+
+			if (isLiked) {
+				return {
+					...state,
+					likeProducts: state.likeProducts.filter((item) => item.id !== action.payload.id),
+				};
+			} else {
+				return {
+					...state,
+					likeProducts: [...state.likeProducts, action.payload]
+				}
+			}
+		}
 	},
 });
 
@@ -89,4 +105,5 @@ export const {
 	decrementPrice,
 	deleteProduct,
 	summation,
+	toggleLike
 } = product.actions;
